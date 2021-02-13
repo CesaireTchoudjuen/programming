@@ -1,9 +1,12 @@
 # Author: Cesaire Tchoudjuen
 # Calculates BMI
 
-weight = input("Enter weight:")
-height = input("Enter height:")
+# Define weight in kg and height in cm
+x = int(input("Enter weight:"))
+y = int(input("Enter height:"))
 
-bmi = int(weight) / int(height ** 2)
+# Calculate BMI
+bmi = x / (y * y) * 10000
 
-print("Your BMI is " + str(bmi))
+# Return the BMI with 2 decimals
+print("Your BMI is {0:.2f}".format(bmi))
