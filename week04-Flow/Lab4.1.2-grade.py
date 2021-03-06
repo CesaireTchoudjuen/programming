@@ -14,3 +14,4 @@ elif percentage < 60:
 elif percentage < 70:
     print("Merit 1")
 else: print ("Distinction")
+

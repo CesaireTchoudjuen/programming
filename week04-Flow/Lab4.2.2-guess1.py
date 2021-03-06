@@ -7,5 +7,6 @@ correctguess = 30
 
 while guess != correctguess:
     print("Wrong!")
-    guess = int(input("Please guess again: "))
+    guess = int(input("Please guess again: ")) #redefines the value of guess for the next loop
+
 print("Well done! Yes the number was {}.".format(correctguess))
