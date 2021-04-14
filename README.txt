@@ -14,4 +14,4 @@ For each week's class, code is uploaded as I follow along the lecturer's demonst
 
 ### Weekly Tasks
 
-For the first 8 classes, a problem (weekly task) was proposed to the student.
+For the first 8 classes, a problem (weekly task) was proposed to the student. These weekly tasks can be found in the folders from week02 to week08.
