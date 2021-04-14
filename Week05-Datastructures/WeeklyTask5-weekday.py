@@ -3,14 +3,12 @@
 
 import datetime
 
-#from datetime import date
-my_date = date.today()
-#week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday',  'Friday', 'Saturday', 'Sunday']
+week_days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday',  'Friday'] # We define the list of week days
+weekend_days = ['Saturday', 'Sunday'] # List of weekend days
+x = datetime.datetime.now() # variable assigned to an object returning the current date and time
+today = x.strftime("%A") # The current date and time format is changed to only return the current day of the week
 
-#import pandas as pd
-#df = pd.Timestamp(my_date)
-#print(df.dayofweek, df.weekday_name)
-
-
-x = datetime.datetime(my_date)
-print(x.strftime("%B"))
+if today in week_days: # we check if the current day of the week is included in the week days
+    print("Yes, unfortunately today is a weekday.")
+else: # we check if the current day of the week is included in the weekend days
+    print('It is the weekend, yay!')
