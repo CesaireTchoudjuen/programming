@@ -5,7 +5,7 @@ fileName = 'count.txt'
 
 def readNumber():
     with open(fileName) as f:
-    number = int(f.read())
+        number = int(f.read())
     return number
     
 num = readNumber()
