@@ -5,11 +5,11 @@
 value = int(input("Please enter a positive integer: "))
 
 while value != 1: # Loop only runs when value is different than 1
-    if value % 2 == 0: 
-        value = value / 2
+    if value % 2 == 0: # At each steps, the program checks if the value is even
+        value = value / 2 # If value is even, it is divided by two
         print(int(value))
     else:   
-        value = ( value * 3) + 1
+        value = ( value * 3) + 1 # If the value is odd, then it is multiplied by 3 and add 1
         print(int(value))
 
 
