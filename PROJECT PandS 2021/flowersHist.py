@@ -10,25 +10,25 @@ versicolor = iris_df[iris_df['species'] == 'versicolor']
 virginica = iris_df[iris_df['species'] == 'virginica']
 
 # Histogram of petal length repartition for the complte dataset
-iris_df.petal_length.plot(kind='hist', title='Frequency of petal length', xlabel='Centimetres(cm)', color='blue')
-plt.xlabel('Petal length (cm)')
+iris_df.petal_length.plot(kind='hist', title='Petal Length', color='blue')
+plt.xlabel('Measurement (cm)')
 plt.ylabel('Frequency')
 plt.show()
 
 # Histogram of petal width repartition for Setosa flowers
-iris_df.petal_width.plot(kind='hist', title='Frequency of petal width', xlabel='Centimetres(cm)', color='yellow')
-plt.xlabel('Petal width (cm)')
+iris_df.petal_width.plot(kind='hist', title='Petal Width', color='yellow')
+plt.xlabel('Measurement (cm)')
 plt.ylabel('Frequency')
 plt.show()
 
 # Histogram of sepal width repartition for Setosa flowers
-iris_df.sepal_width.plot(kind='hist', title='Frequency of sepal width', xlabel='Centimetres(cm)', color='blue')
-plt.xlabel('Sepal width (cm)')
+iris_df.sepal_width.plot(kind='hist', title='Sepal Width', color='green')
+plt.xlabel('Measurement (cm)')
 plt.ylabel('Frequency')
 plt.show()
 
-# Histogram of sepal width repartition for Setosa flowers
-iris_df.sepal_length.plot(kind='hist', title='Frequency of sepal length', color='red', label='Centimetres(cm)')
-plt.xlabel('Sepal length (cm)')
+# Histogram of sepal length repartition for Setosa flowers
+iris_df.sepal_length.plot(kind='hist', title='Sepal Length', color='red')
+plt.xlabel('Measurement (cm)')
 plt.ylabel('Frequency')
 plt.show()

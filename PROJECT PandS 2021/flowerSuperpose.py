@@ -9,13 +9,13 @@ setosa = iris_df[iris_df['species'] == 'setosa']
 versicolor = iris_df[iris_df['species'] == 'versicolor']
 virginica = iris_df[iris_df['species'] == 'virginica']
 
-## SUPERPOSITION of the the repartition of the 3 iris species data
+## Overlapping the repartition of the 3 iris species data
 
 # PETAL LENGTH
 virginica.petal_length.plot(kind='hist', title='Histogram of Petal Length', label='Virginica', color='green')
 versicolor.petal_length.plot(kind='hist', title='Histogram of Petal Length', label='Versicolor', color='red')
 setosa.petal_length.plot(kind='hist', title='Histogram of Petal Length', label= 'Setosa', color='blue') # It seems like the histogram title is the title of the last plot added
-plt.xlabel('Petal length (cm)')
+plt.xlabel('Petal length (cm)') # Adds legends on the x and y axis
 plt.ylabel('Frequency')
 plt.legend() # Adds a legend to the histogram
 plt.show()
@@ -27,7 +27,7 @@ versicolor.petal_width.plot(kind='hist', title='Histogram of Petal Width', label
 setosa.petal_width.plot(kind='hist', title='Histogram of Petal Width', label= 'Setosa', color='blue') 
 plt.xlabel('Petal width (cm)')
 plt.ylabel('Frequency')
-plt.legend() # Adds a legend to the histogram
+plt.legend() 
 plt.show()
 
 # SEPAL LENGTH
@@ -36,7 +36,7 @@ versicolor.sepal_length.plot(kind='hist', title='Histogram of Sepal Length', lab
 setosa.sepal_length.plot(kind='hist', title='Histogram of Sepal Length', label= 'Setosa', color='blue') 
 plt.xlabel('Sepal Length (cm)')
 plt.ylabel('Frequency')
-plt.legend() # Adds a legend to the histogram
+plt.legend() 
 plt.show()
 
 # SEPAL WIDTH
@@ -45,5 +45,5 @@ versicolor.sepal_width.plot(kind='hist', title='Histogram of Sepal Width', label
 setosa.sepal_width.plot(kind='hist', title='Histogram of Sepal Width', label= 'Setosa', color='blue') 
 plt.xlabel('Sepal Width (cm)')
 plt.ylabel('Frequency')
-plt.legend() # Adds a legend to the histogram
+plt.legend() 
 plt.show()
