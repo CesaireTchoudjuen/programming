@@ -9,13 +9,41 @@ setosa = iris_df[iris_df['species'] == 'setosa']
 versicolor = iris_df[iris_df['species'] == 'versicolor']
 virginica = iris_df[iris_df['species'] == 'virginica']
 
-# Superposition of petal length of all 3 species
-virginica.petal_length.plot(kind='hist', title='Frequency of virginica petal length', xlabel='Centimetres(cm)', color='green')
-versicolor.petal_length.plot(kind='hist', title='Frequency of versicolor petal length', xlabel='Centimetres(cm)', color='red')
-setosa.petal_length.plot(kind='hist', title='Frequency of Setosa petal length', xlabel='Centimetres(cm)', color='blue')
+## SUPERPOSITION of the the repartition of the 3 iris species data
+
+# PETAL LENGTH
+virginica.petal_length.plot(kind='hist', title='Histogram of Petal Length', label='Virginica', color='green')
+versicolor.petal_length.plot(kind='hist', title='Histogram of Petal Length', label='Versicolor', color='red')
+setosa.petal_length.plot(kind='hist', title='Histogram of Petal Length', label= 'Setosa', color='blue') # It seems like the histogram title is the title of the last plot added
 plt.xlabel('Petal length (cm)')
 plt.ylabel('Frequency')
 plt.legend() # Adds a legend to the histogram
 plt.show()
 
-# I need to write code for remain 3 attributes + find out how I can amend the legend on the graph itself to show the name of each species
+
+# PETAL WIDTH
+virginica.petal_width.plot(kind='hist', title='Histogram of Petal Width',label='Virginica', color='green')
+versicolor.petal_width.plot(kind='hist', title='Histogram of Petal Width', label='Versicolor', color='red')
+setosa.petal_width.plot(kind='hist', title='Histogram of Petal Width', label= 'Setosa', color='blue') 
+plt.xlabel('Petal width (cm)')
+plt.ylabel('Frequency')
+plt.legend() # Adds a legend to the histogram
+plt.show()
+
+# SEPAL LENGTH
+virginica.sepal_length.plot(kind='hist', title='Histogram of Sepal Length',label='Virginica', color='green')
+versicolor.sepal_length.plot(kind='hist', title='Histogram of Sepal Length', label='Versicolor', color='red')
+setosa.sepal_length.plot(kind='hist', title='Histogram of Sepal Length', label= 'Setosa', color='blue') 
+plt.xlabel('Sepal Length (cm)')
+plt.ylabel('Frequency')
+plt.legend() # Adds a legend to the histogram
+plt.show()
+
+# SEPAL WIDTH
+virginica.sepal_width.plot(kind='hist', title='Histogram of Sepal Width',label='Virginica', color='green')
+versicolor.sepal_width.plot(kind='hist', title='Histogram of Sepal Width', label='Versicolor', color='red')
+setosa.sepal_width.plot(kind='hist', title='Histogram of Sepal Width', label= 'Setosa', color='blue') 
+plt.xlabel('Sepal Width (cm)')
+plt.ylabel('Frequency')
+plt.legend() # Adds a legend to the histogram
+plt.show()
