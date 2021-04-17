@@ -11,7 +11,7 @@ import numpy as np
 # DEFINE DATA
 iris = sns.load_dataset("iris") 
 
-### SCATTER POINTS PLOTS ###
+### OVERLAPPING SCATTER POINTS PLOTS ###
 
 # PETAL SCATTER POINTS PLOT
 for n, grp in iris.groupby("species"): # Program loops over the species
@@ -28,7 +28,7 @@ plt.ylabel('Sepal Width (cm)')
 plt.legend() # Displays legend (here listing the species)
 plt.show()
 
-### HISTOGRAM PLOTS ###
+### INDIVIDUAL HISTOGRAM PLOTS ###
 # HISTOGRAM OF PETAL LENGTH REPARTITION 
 iris.petal_length.plot(kind='hist', title='Petal Length', color='blue') #
 plt.xlabel('Length (cm)') # x and y axis label added for visibility 
@@ -50,3 +50,43 @@ plt.xlabel('Width (cm)') # x and y axis label added for visibility
 plt.ylabel('Frequency')
 plt.show()
 
+### OVERLAPPING HISTOGRAM PLOTS ###
+# For this part I found easier to read a csv file from local directory in order to define series equel to each species
+## Define the data
+iris_df = pd.read_csv('iris.csv') #No need for full path as file is in the same directory
+# All specied variable are defined below
+setosa = iris_df[iris_df['species'] == 'setosa']
+versicolor = iris_df[iris_df['species'] == 'versicolor']
+virginica = iris_df[iris_df['species'] == 'virginica']
+# PETAL LENGTH
+virginica.petal_length.plot(kind='hist', title='Histogram of Petal Length', label='Virginica', color='green')
+versicolor.petal_length.plot(kind='hist', title='Histogram of Petal Length', label='Versicolor', color='red')
+setosa.petal_length.plot(kind='hist', title='Histogram of Petal Length', label= 'Setosa', color='blue') # It seems like the histogram title is the title of the last plot added
+plt.xlabel('Petal length (cm)') # Adds legends on the x and y axis
+plt.ylabel('Frequency')
+plt.legend() # Adds a legend to the histogram
+plt.show()
+# PETAL WIDTH
+virginica.petal_width.plot(kind='hist', title='Histogram of Petal Width',label='Virginica', color='green')
+versicolor.petal_width.plot(kind='hist', title='Histogram of Petal Width', label='Versicolor', color='red')
+setosa.petal_width.plot(kind='hist', title='Histogram of Petal Width', label= 'Setosa', color='blue') 
+plt.xlabel('Petal width (cm)')
+plt.ylabel('Frequency')
+plt.legend() 
+plt.show()
+# SEPAL LENGTH
+virginica.sepal_length.plot(kind='hist', title='Histogram of Sepal Length',label='Virginica', color='green')
+versicolor.sepal_length.plot(kind='hist', title='Histogram of Sepal Length', label='Versicolor', color='red')
+setosa.sepal_length.plot(kind='hist', title='Histogram of Sepal Length', label= 'Setosa', color='blue') 
+plt.xlabel('Sepal Length (cm)')
+plt.ylabel('Frequency')
+plt.legend() 
+plt.show()
+# SEPAL WIDTH
+virginica.sepal_width.plot(kind='hist', title='Histogram of Sepal Width',label='Virginica', color='green')
+versicolor.sepal_width.plot(kind='hist', title='Histogram of Sepal Width', label='Versicolor', color='red')
+setosa.sepal_width.plot(kind='hist', title='Histogram of Sepal Width', label= 'Setosa', color='blue') 
+plt.xlabel('Sepal Width (cm)')
+plt.ylabel('Frequency')
+plt.legend() 
+plt.show()
