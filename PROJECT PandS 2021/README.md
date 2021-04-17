@@ -47,7 +47,7 @@ After running analysis.py, several files will be saved on your local machine:
 * hist_sepal_length_overlap.png
 * hist_sepal_width_overlap.png
 
-# variable.txt
+# Variable analysed
 
 In this text file, the variables used for this demonstration are listed.
 The file also provides with an overview of some basic statistical data such as count, mean, min, max...
@@ -58,9 +58,10 @@ Comparatively, it appears that the sepal measurements between the 3 flower speci
 
 It seems like the disparities between the flower species are more important amongst the sepal measurements than petal's. This can be also seen by compring the mean value for the sepal and petal measurements to the maximum value collected for these variables. 
 
-# hist_petal_length.png and hist_petal_length_overlap.png
+# Petal Length Histograms 
 
-First, let's observe the hist_petal_length.png histogram. This histogram display the repartition frequency of the variable 'petal length'. Looking at the histogram, we can see 2 blocks. One smaller one recording a quite high frequency of short petal length. The 2nd block displays a repartiion more common of the data collected. 
+HEre, two histograms are observed: hist_petal_length.png and histogram hist_petal_length.png.
+First, let's observe the hist_petal_length.png histogram. This histogram display the repartition frequency of the variable 'petal length'. Looking at the histogram, we can see 2 blocks. One smaller one recording a quite high frequency of short petal length (from 1 to 2cm long). The 2nd block displays a repartiion more common of the data collected (3 to 7cm long, with the highest frequency between 4 and 6cm). 
 Now, observing the 2nd histogram hist_petal_length.png, we get an insight of the repartion of the petal length measurement by flower type. The one smaller observed in the previous histogram is exclusively consisting of dqtq collected from Iris Setosa. The second block, more blended is composed of data from Iris Versicolor and Iris Virginica flowers. 
 Taking only the petal length variable into consideration, there seems to be a sharp differentiation between the Iris setosa and the two other flower types. 
 
