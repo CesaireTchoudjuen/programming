@@ -60,15 +60,20 @@ It seems like the disparities between the flower species are more important amon
 
 ### Petal Length Histograms 
 
-Here, two histograms are observed: hist_petal_length.png and histogram hist_petal_length.png.
+Here, two histograms are observed: hist_petal_length.png and histogram hist_petal_length_overlap.png.
 
 First, let's observe the hist_petal_length.png histogram. This histogram display the repartition frequency of the variable 'petal length'. Looking at the histogram, we can see 2 blocks. One smaller one recording a quite high frequency of short petal length (from 1 to 2cm long). The 2nd block displays a repartiion more common of the data collected (3 to 7cm long, with the highest frequency between 4 and 6cm). 
 
 Now, observing the 2nd histogram hist_petal_length.png, we get an insight of the repartion of the petal length measurement by flower type. The one smaller observed in the previous histogram is exclusively consisting of dqtq collected from Iris Setosa. The second block, more blended is composed of data from Iris Versicolor and Iris Virginica flowers. 
 Taking only the petal length variable into consideration, there seems to be a sharp differentiation between the Iris setosa and the two other flower types. 
 
+### Petal Width Histograms
 
+Here, two histograms are observed: hist_petal_width.png and histogram hist_petal_width_overlap.png.
 
+First, let's observe the hist_petal_width.png histogram. Similarly to the petal lenght histogram, we can disctinctly observe a first block, with high frequency between 0 and 0.5cm. The second block appears more coherent, with most of the petal width measured between 1.25 and 2.5cm. The second block have more even distribution of the frequency of the petal width, while the first block appears to  
+
+The second histogram is similar to the previous one, but it presents each flower species data in a different color. With this insight, we can notice that once again that the setosa petal width measurment follow a trend very different from versicolor and virginica flowers. 
 
 
 

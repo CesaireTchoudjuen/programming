@@ -88,8 +88,8 @@ versicolor.petal_width.plot(kind='hist', title='Histogram of Petal Width', label
 setosa.petal_width.plot(kind='hist', title='Histogram of Petal Width', label= 'Setosa', color='blue') 
 plt.xlabel('Petal width (cm)')
 plt.ylabel('Frequency')
+plt.legend()
 plt.savefig('hist_petal_width_overlap.png')
-plt.legend() 
 plt.show()
 # SEPAL LENGTH
 virginica.sepal_length.plot(kind='hist', title='Histogram of Sepal Length',label='Virginica', color='green')
