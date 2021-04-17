@@ -1,40 +1,52 @@
+# Program that overlaps the scatter point plots of the 3 species and then outputs an histogram for the repartition of each measured feature:
+# i.e. Sepal Length and Width as well as Petal Length and Width
+# The plot should provide with insight regarding the repartition of the flowers features according to their species
+# Program will compare the petal length vs width before comparing sepal length vs width
+
 import pandas as pd
 import matplotlib.pyplot as plt
-import pdb
+import seaborn as sns # Seaborn library is used as it makes it easier to add color to the plot. It also allows us to load built-in dataset
+import numpy as np
 
-iris_df = pd.read_csv('iris.csv') #No need for full path as file is in the same directory
-setosa = iris_df[iris_df['species'] == 'setosa']
-fig, ax = plt.subplots(figsize=(10, 6))
+# DEFINE DATA
+iris = sns.load_dataset("iris") 
 
+### SCATTER POINTS PLOTS ###
 
-#x = setosa.petal_length.plot(kind='hist', title='Frequency of Setosa petal length', xlabel='Centimetres(cm)', color='blue')
-#y = setosa.petal_width.plot(kind='hist', title='Frequency of Setosa petal width', xlabel='Centimetres(cm)', color='yellow')
-
-ax.scatter(x = iris_df['petal_length'],y=iris_df['petal_width'])
-plt.xlabel("petal_length")
-plt.ylabel("petal_width")
-
+# PETAL SCATTER POINTS PLOT
+for n, grp in iris.groupby("species"): # Program loops over the species
+    plt.scatter(grp.petal_length, grp.petal_width, label=n) # And returns the data points for petal length and width
+plt.xlabel('Petal Length (cm)') # x and y axis label added for visibility 
+plt.ylabel('Petal Width (cm)')
+plt.legend() # Displays legend (here listing the species)
+plt.show()
+# SEPAL SCATTER POINTS PLOT
+for n, grp in iris.groupby("species"): # Program loops over the species
+    plt.scatter(grp.sepal_length, grp.sepal_width, label=n) # And returns the data points for sepal length and width
+plt.xlabel('Sepal Length (cm)') # x and y axis label added for visibility 
+plt.ylabel('Sepal Width (cm)')
+plt.legend() # Displays legend (here listing the species)
 plt.show()
 
-
-
-'''
-## Overlapping the repartition of the 3 iris species data in a scatter plot
-
-a = virginica.petal_length.plot(kind='hist', title='Histogram of Petal Length', label='Virginica', color='green')
-b = versicolor.petal_length.plot(kind='hist', title='Histogram of Petal Length', label='Versicolor', color='red')
-c = setosa.petal_length.plot(kind='hist', title='Histogram of Petal Length', label= 'Setosa', color='blue') # It seems like the histogram title is the title of the last plot added
-
-data = (a, b, c)
-colors = ("red", "green", "blue")
-groups = (virginica, versicolor, setosa)
-
-for data, color, group in zip(data, colors, groups):
-    x, y = data
-ax.scatter(x, y,)
-
-
-plt.legend() # Adds a legend to the histogram
-plt.scatter(a, b, c)
+### HISTOGRAM PLOTS ###
+# HISTOGRAM OF PETAL LENGTH REPARTITION 
+iris.petal_length.plot(kind='hist', title='Petal Length', color='blue') #
+plt.xlabel('Length (cm)') # x and y axis label added for visibility 
+plt.ylabel('Frequency')
 plt.show()
-'''
+# HISTOGRAM OF PETAL WIDTH REPARTITION 
+iris.petal_width.plot(kind='hist', title='Petal Width', color='yellow')
+plt.xlabel('Width (cm)') # x and y axis label added for visibility 
+plt.ylabel('Frequency')
+plt.show()
+# HISTOGRAM OF SEPAL LENGTH REPARTITION 
+iris.sepal_length.plot(kind='hist', title='Sepal Length', color='red')
+plt.xlabel('Length (cm)') # x and y axis label added for visibility 
+plt.ylabel('Frequency')
+plt.show()
+# HISTOGRAM OF SEPAL WIDTH REPARTITION 
+iris.sepal_width.plot(kind='hist', title='Sepal Width', color='green')
+plt.xlabel('Width (cm)') # x and y axis label added for visibility 
+plt.ylabel('Frequency')
+plt.show()
+
