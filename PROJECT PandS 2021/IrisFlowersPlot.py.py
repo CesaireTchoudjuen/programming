@@ -1,8 +1,11 @@
-# Program that overlaps the scatter point plots of the 3 species and then outputs an histogram for the repartition of each measured feature:
-# i.e. Sepal Length and Width as well as Petal Length and Width
-# The plot should provide with insight regarding the repartition of the flowers features according to their species
-# Program will compare the petal length vs width before comparing sepal length vs width
+# Author: Cesaire Tchoudjuen
+# Program that:
+# (1) Outputs scatter points plots comparing petal (length/width) and sepal (length/width)
+# (2) Outputs individual histograms for the frequency of repartition of petal length, petal width, sepal length and sepal width
+# (3) Outputs similar histograms as (2) but differentiating each species 
+# The plots should provide with insight regarding the repartition of the flowers features according to their species
 
+# IMPORT USED LIBRARIES
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns # Seaborn library is used as it makes it easier to add color to the plot. It also allows us to load built-in dataset
@@ -11,6 +14,7 @@ import numpy as np
 # DEFINE DATA
 iris = sns.load_dataset("iris") 
 
+########################################
 ### OVERLAPPING SCATTER POINTS PLOTS ###
 
 # PETAL SCATTER POINTS PLOT
@@ -28,7 +32,9 @@ plt.ylabel('Sepal Width (cm)')
 plt.legend() # Displays legend (here listing the species)
 plt.show()
 
+##################################
 ### INDIVIDUAL HISTOGRAM PLOTS ###
+
 # HISTOGRAM OF PETAL LENGTH REPARTITION 
 iris.petal_length.plot(kind='hist', title='Petal Length', color='blue') #
 plt.xlabel('Length (cm)') # x and y axis label added for visibility 
@@ -50,8 +56,10 @@ plt.xlabel('Width (cm)') # x and y axis label added for visibility
 plt.ylabel('Frequency')
 plt.show()
 
+###################################
 ### OVERLAPPING HISTOGRAM PLOTS ###
-# For this part I found easier to read a csv file from local directory in order to define series equel to each species
+
+# For this part, I found it easier to read a csv file from local directory in order to define series equal to each species
 ## Define the data
 iris_df = pd.read_csv('iris.csv') #No need for full path as file is in the same directory
 # All specied variable are defined below
