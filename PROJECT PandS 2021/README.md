@@ -1,17 +1,17 @@
 ### THE IRIS DATASET
 
-This dataset was produced in 1936 by Ronald Fisher in his research paper 'The use of multiple measurements in taxonomic problems'.
+This dataset was introduced in 1936 by  the British statistician and biologist Ronald Fisher in his research paper 'The use of multiple measurements in taxonomic problems'.
 
 The dataset consisty of 150 records. 50 records for each of the 3 irish spicies: 
-	- Iris setosa
-	- Iris virginica
-	- Iris versicolor
+1. Iris setosa
+2. Iris virginica
+3. Iris versicolor
 
 For each species 4 features were collected: 
-	- Sepals lenght (cm)
-	- Sepals width (cm)
-	- Petals lenght (cm)
-	- Petals width (cm)
+1. Sepals lenght (cm)
+2. Sepals width (cm)
+3. Petals lenght (cm)
+4. Petals width (cm)
 
 Over the years, the Iris flower data set has become a classic test case for numerous statistical and data analysis techniques.
 Using Python, we will analyze this data and present it in an intellegible way. 

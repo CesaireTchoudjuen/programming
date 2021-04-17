@@ -7,3 +7,17 @@ min 4.3 2.0 1.0 0.1
 50% 5.8 3.0 4.35 1.3
 75% 6.4 3.3 5.1 1.8
 max 7.9 4.4 6.9 2.5
+
+On the abovetable, extract from the describe() method, a summary of statistics pertaining to the dataframe Fisher Iris Flowers are displayed
+
+
+Below is summary of each variable used in the analysis by analysis.py as well as some initial statistical data pertaining to the Fisher Iris Flowers dataframe. 
+
+Variable used for the analysis of the Fisher Iris flowers dataframe:
+ -Petal Length 
+ -Petal Width 
+ -Sepal Length 
+ -Sepal Width 
+- Species (Virginica, Setosa, Versicolor)
+
+
