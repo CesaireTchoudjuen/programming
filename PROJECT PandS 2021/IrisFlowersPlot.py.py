@@ -1,9 +1,10 @@
 # Author: Cesaire Tchoudjuen
 # Program that:
 # (1) Outputs scatter points plots comparing petal (length/width) and sepal (length/width)
-# (2) Outputs individual histograms for the frequency of repartition of petal length, petal width, sepal length and sepal width
-# (3) Outputs similar histograms as (2) but differentiating each species 
-# The plots should provide with insight regarding the repartition of the flowers features according to their species
+# (2) Outputs individual histogram plots for the frequency of repartition of petal length, petal width, sepal length and sepal width
+# (3) Outputs similar histogram plots as (2) but differentiating each species 
+# The plots should provide user with insight regarding the repartition of the flowers features according to their species
+# The analysis of this project will be based on the insight drawn from these plots
 
 # IMPORT USED LIBRARIES
 import pandas as pd
@@ -63,11 +64,11 @@ plt.show()
 ## Define the data
 iris_df = pd.read_csv('iris.csv') #No need for full path as file is in the same directory
 # All specied variable are defined below
-setosa = iris_df[iris_df['species'] == 'setosa']
+setosa = iris_df[iris_df['species'] == 'setosa'] # Here program will open the iris dataframe and only return data when species = setosa
 versicolor = iris_df[iris_df['species'] == 'versicolor']
 virginica = iris_df[iris_df['species'] == 'virginica']
 # PETAL LENGTH
-virginica.petal_length.plot(kind='hist', title='Histogram of Petal Length', label='Virginica', color='green')
+virginica.petal_length.plot(kind='hist', title='Histogram of Petal Length', label='Virginica', color='green') # Program will only return data fron petal_length in the designated species
 versicolor.petal_length.plot(kind='hist', title='Histogram of Petal Length', label='Versicolor', color='red')
 setosa.petal_length.plot(kind='hist', title='Histogram of Petal Length', label= 'Setosa', color='blue') # It seems like the histogram title is the title of the last plot added
 plt.xlabel('Petal length (cm)') # Adds legends on the x and y axis

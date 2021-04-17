@@ -38,7 +38,7 @@ for name, group in iris.groupby("species"):
     plt.scatter(x, y, label=name)
 plt.legend()
 plt.show()
-'''
+
 
 
 # PETAL SCATTER POINTS
@@ -62,5 +62,8 @@ plt.xlabel('Sepal Length (cm)') # x and y axis label added for visibility
 plt.ylabel('Sepal Width (cm)')
 plt.legend() # Displays legend (here listing the species)
 plt.show()
-
+'''
+iris = sns.load_dataset("iris")
+#sns.set()
+sns.swarmplot(x='species', y='petal_length', data=iris,s=10)
 
