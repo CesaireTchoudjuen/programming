@@ -1,7 +1,30 @@
+# IMPORT USED LIBRARIES
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
+import seaborn as sns # Seaborn library is used as it makes it easier to add color to the plot. It also allows us to load built-in dataset
 import numpy as np
+
+# DEFINE DATA
+iris = sns.load_dataset("iris") 
+
+########################################
+### OVERLAPPING SCATTER POINTS PLOTS ###
+
+# PETAL SCATTER POINTS PLOT
+for n, grp in iris.groupby("species"): # Program loops over the species
+    plt.scatter(grp.petal_length, grp.petal_width, label=n) # And returns the data points for petal length and width
+plt.xlabel('Petal Length (cm)') # x and y axis label added for visibility 
+plt.ylabel('Petal Width (cm)')
+plt.legend() # Displays legend (here listing the species)
+plt.savefig('Petal_Scatter_Plot.png')
+plt.show()
+
+
+
+
+
+
+
 
 
 '''
@@ -63,7 +86,5 @@ plt.ylabel('Sepal Width (cm)')
 plt.legend() # Displays legend (here listing the species)
 plt.show()
 '''
-iris = sns.load_dataset("iris")
-#sns.set()
-sns.swarmplot(x='species', y='petal_length', data=iris,s=10)
+
 
