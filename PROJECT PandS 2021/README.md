@@ -1,4 +1,4 @@
-### THE IRIS DATASET ###
+### THE IRIS DATASET
 
 This dataset was produced in 1936 by Ronald Fisher in his research paper 'The use of multiple measurements in taxonomic problems'.
 
@@ -16,7 +16,7 @@ For each species 4 features were collected:
 Over the years, the Iris flower data set has become a classic test case for numerous statistical and data analysis techniques.
 Using Python, we will analyze this data and present it in an intellegible way. 
 
-## Data Visualisation of the Iris Dataset ##
+## Data Visualisation of the Iris Dataset
 
 First the entire data set is analyzed. 
 Run the python program flowerHist.py to generate the histograms for the Iris petal and sepal attributes collected by Fisher.
