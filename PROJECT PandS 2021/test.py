@@ -10,14 +10,7 @@ iris = sns.load_dataset("iris")
 ########################################
 ### OVERLAPPING SCATTER POINTS PLOTS ###
 
-# PETAL SCATTER POINTS PLOT
-for n, grp in iris.groupby("species"): # Program loops over the species
-    plt.scatter(grp.petal_length, grp.petal_width, label=n) # And returns the data points for petal length and width
-plt.xlabel('Petal Length (cm)') # x and y axis label added for visibility 
-plt.ylabel('Petal Width (cm)')
-plt.legend() # Displays legend (here listing the species)
-plt.savefig('Petal_Scatter_Plot.png')
-plt.show()
+print(iris.describe())
 
 
 
