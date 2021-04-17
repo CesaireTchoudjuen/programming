@@ -47,7 +47,7 @@ After running analysis.py, several files will be saved on your local machine:
 * hist_sepal_length_overlap.png
 * hist_sepal_width_overlap.png
 
-# Variable analysed
+###  Variable analysed
 
 In this text file, the variables used for this demonstration are listed.
 The file also provides with an overview of some basic statistical data such as count, mean, min, max...
@@ -58,7 +58,7 @@ Comparatively, it appears that the sepal measurements between the 3 flower speci
 
 It seems like the disparities between the flower species are more important amongst the sepal measurements than petal's. This can be also seen by compring the mean value for the sepal and petal measurements to the maximum value collected for these variables. 
 
-# Petal Length Histograms 
+### Petal Length Histograms 
 
 Here, two histograms are observed: hist_petal_length.png and histogram hist_petal_length.png.
 
