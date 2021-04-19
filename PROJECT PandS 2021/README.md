@@ -56,16 +56,16 @@ Observing the table, one can note that there seems to be an important variation 
 Similarly, the shortest measured petal is 1cm long while the longest is 6.9cm, almost 7 times longer.
 Comparatively, it appears that the sepal measurements between the 3 flower species are more coherent, with a maximum length and width about 2 times larger than the minimum value collected. 
 
-It seems like the disparities between the flower species are more important amongst the sepal measurements than petal's. This can be also seen by compring the mean value for the sepal and petal measurements to the maximum value collected for these variables. 
+It seems like the disparities between the flower species are more important amongst the sepal measurements than petal's. This can be also seen by comparing the mean value for the sepal and petal measurements to the maximum value collected for these variables. 
 
 ### Petal Length Histograms 
 
 Here, two histograms are observed: hist_petal_length.png and histogram hist_petal_length_overlap.png.
  
-First, let's observe the hist_petal_length.png histogram. This histogram display the repartition frequency of the variable 'petal length'. Looking at the histogram, we can see 2 blocks. One smaller one recording a quite high frequency of short petal length (from 1 to 2cm long). The 2nd block displays a repartiion more common of the data collected (3 to 7cm long, with the highest frequency between 4 and 6cm). 
+First, let's observe the hist_petal_length.png histogram. This histogram displays the repartition frequency of the variable 'petal length'. Looking at the histogram, we can see 2 blocks, or cluster. The smaller one is recording quite a high frequency of short petal length (from 1 to 2cm long). The 2nd block displays a repartiion more normal of the data collected (3 to 7cm long, with the highest frequency between 4 and 6cm). 
 
-Now, observing the 2nd histogram hist_petal_length.png, we get an insight of the repartion of the petal length measurement by flower type. The one smaller observed in the previous histogram is exclusively consisting of dqtq collected from Iris Setosa. The second block, more blended is composed of data from Iris Versicolor and Iris Virginica flowers. 
-Taking only the petal length variable into consideration, there seems to be a sharp differentiation between the Iris setosa and the two other flower types. 
+Observing the 2nd histogram hist_petal_length.png, we get an insight of the repartion of the petal length measurement by flower type. The smaller one, observed in the previous histogram, consists exclusively of data collected from Iris Setosa. The second block, more blended is composed of data from Iris Versicolor and Iris Virginica flowers. 
+Taking only the petal length variable into consideration, there seems to be a sharp differentiation between the Iris setosa and the two other flower types. In the second cluster, iris versicolor and iris virginica barely overlap, meaning this variable could be used to differentiate the 3 flower types.
 
 ### Petal Width Histograms
 
@@ -91,6 +91,25 @@ Here, two histograms are observed: hist_sepal_width.png and histogram hist_sepal
 Observing both histograms, it appears that the data of all flower species is uniformly distributed. 
 The majority of the datapoints are distributed between 2.5cm and 4cm width. Looking at the overlaping histogram, the Iris virginica data points (green) are almost entirely covered, meaning it is matching the value of both Iris setosa and Iris virginica flowers. 
 
+### Histogram summary
+
+In a nutshell, based on the above analysis of the histograms, several observations can be made:
+1. The distribution of the Iris setosa flower petals is totally different from the two other flower types.
+2. Sepal length and sepal width can't be used to differentiate the flower species as the datapoints for these variables were overlapping for all 3 flower types.
+3. The petal length variable can be used to differentiate the 3 different iris species.
+
+### Petal Scatter plot
+
+After observing and commenting on the histograms of each of the 4 collected variables, we'll know observe the scatter plots for petal and sepal variables.
+Scatter plot are a good way to visualize 2 variables that pair well together and that way, have a visual representation of their relationship.
+First comment when observing the scatter plots, is the linear repartition of the data points between petal length and petal width. Here the petal scatter plot display 2 distincs clusters, the first one, in blue in the file petal_scatter_plot.png, represents the setosa flowers. Once again, this flower type features are easily set apart from the two other iris species. The relationship between petal width and length is also strong. 
+In the second cluster, virginica and versicolor flowers are distributed in a linear fashion as well. Within this cluster there is a clear disctinction between the 2 species. 
+Based on this scatter plot, the petal feature can be used a differentiator to tell the 3 flower species apart.
+
+### Sepal Scatter Plot
+
+The second scatter plot, speal_scatter_plot.png, doesn't present a linear repartition of the data points the way the petal variable does.
+Two clusters can be spotted. The first one, containing the greatest value for the sepal width variable, is representing the iris setosa flower. The second cluster contains the two other flower types. In this cluster the data points are overlapped and it is impossible to leverage this data to differentiate versicolor flowers from the virginica flowers. 
 
 __________________________________
 
