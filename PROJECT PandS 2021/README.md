@@ -111,7 +111,7 @@ Based on this scatter plot, the petal feature can be used a differentiator to te
 The second scatter plot, speal_scatter_plot.png, doesn't present a linear repartition of the data points the way the petal variable does.
 Two clusters can be spotted. The first one, containing the greatest value for the sepal width variable, is representing the iris setosa flower. The second cluster contains the two other flower types. In this cluster the data points are overlapped and it is impossible to leverage this data to differentiate versicolor flowers from the virginica flowers. 
 
-#### SECTION 3 - Comments and Summary 
+## SECTION 3 - Comments and Summary 
 
 During the analysis of the Fisher Iris flowers dataset, it appeared that the petal variables (length and width) could be used to help categorize and class iris flowers between the 3 species collected by Fisher. This is assuming only the 3 studied species are presented to us for classification. 
 The distribution of sepal data points isn't as linear and distinct as the petal variables. It can't be used as a differentiating factor in term of distribution of the 3 flower species. 
