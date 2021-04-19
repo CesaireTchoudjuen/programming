@@ -111,20 +111,25 @@ Based on this scatter plot, the petal feature can be used a differentiator to te
 The second scatter plot, speal_scatter_plot.png, doesn't present a linear repartition of the data points the way the petal variable does.
 Two clusters can be spotted. The first one, containing the greatest value for the sepal width variable, is representing the iris setosa flower. The second cluster contains the two other flower types. In this cluster the data points are overlapped and it is impossible to leverage this data to differentiate versicolor flowers from the virginica flowers. 
 
-__________________________________
+#### SECTION 3 - Comments and Summary 
+
+During the analysis of the Fisher Iris flowers dataset, it appeared that the petal variables (length and width) could be used to help categorize and class iris flowers between the 3 species collected by Fisher. This is assuming only the 3 studied species are presented to us for classification. 
+The distribution of sepal data points isn't as linear and distinct as the petal variables. It can't be used as a differentiating factor in term of distribution of the 3 flower species. 
+This project and the dataset used in itself are quite interesting. It showcases how, by focusing only on data, it is possible to classsify flowers between different species. With this in mind, this opens the door for programs processing data to learn how to interprete and classify that data, simply based on the value of few variables. This was before only doable by human brains (and admittedly some other animals). When firs treading about htis dataset, itwas presented as one of the pioneer work toward data science and machine learning. Having analysed this dataset, I know understand how the work from Pr. Fisher paved the way towards modern machine learning. 
+
+In this project, the analysis tools used are mainly based on approaches covered during the first term of our Higher Diploma in Data Analytics at GMIT. While researching about this subject online, I found several analysis from fellow data science students leveraging statistical tools such as the cluster dendrogram, the k-mean and other more advanced methods. While I started reading about them, I decided to leave them out of this project in order to keep it coherent and be able to provide a clear and comprehensive explanation of my code and its output, if it was required by the lecturer. I wouldn't have been able to maintain the same level of delivery and probably even analysis by including technologies and methods I am not yet familiar with. 
+
+I am aware some of these statistical methods will be covered during the second term of the Higher Diploma in Data Analytics. I could be interesting, in a year time, to pick up this project and start it from scratch, with the knowledge acquired between now and then. Comparing the output of the analysis between this basic analytics project and what this project could turn out to be in a year time would surely show some discrepency in the conclusion drawn and showcase how powerful some analytics andd statistical methods can be. 
 
 
-These histogram are the occasion to observe how the data points are distributed with respect to frequency.
-See histograms: PetalLength.png, PetalWidth.png, SepalLength.png, SepalWidth.png
->> Observing these histograms, we notice that while sepal width and lenght appear to be normally distributed, petal length and width are unevenly distributed.
+## SECTION 4 - External Resources used
 
+* https://www.google.ie
+* https://www.w3schools.com/python/default.asp 
+* https://www.geeksforgeeks.org/
+* https://stackoverflow.com/
+* https://en.wikipedia.org/wiki/Iris_flower_data_set 
+* https://matplotlib.org/
+* https://seaborn.pydata.org/
+* https://numpy.org/ 
 
-Diving down further into the details, the same analysis is carried out on the flower type/spiecies level. 
-For each species, similar histograms are generated through Python. 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ANALYSE AND OBSER+VE HERE
-
-
-
-
-
-When superposed, XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ANALYSE AND OBSER+VE HERE
