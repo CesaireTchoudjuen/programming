@@ -62,6 +62,7 @@ It seems like the disparities between the flower species are more important amon
 
 Here, two histograms are observed: hist_petal_length.png and histogram hist_petal_length_overlap.png.
  
+ ![Petal Length Histogram](https://github.com/CesaireTchoudjuen/programming/blob/main/hist_petal_length.png)
 First, let's observe the hist_petal_length.png histogram. This histogram displays the repartition frequency of the variable 'petal length'. Looking at the histogram, we can see 2 blocks, or cluster. The smaller one is recording quite a high frequency of short petal length (from 1 to 2cm long). The 2nd block displays a repartiion more normal of the data collected (3 to 7cm long, with the highest frequency between 4 and 6cm). 
 
 Observing the 2nd histogram hist_petal_length.png, we get an insight of the repartion of the petal length measurement by flower type. The smaller one, observed in the previous histogram, consists exclusively of data collected from Iris Setosa. The second block, more blended is composed of data from Iris Versicolor and Iris Virginica flowers. 
