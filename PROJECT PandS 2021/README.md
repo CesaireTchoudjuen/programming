@@ -75,7 +75,11 @@ Taking only the petal length variable into consideration, there seems to be a sh
 
 Here, two histograms are observed: hist_petal_width.png and histogram hist_petal_width_overlap.png.
 
+![Petal Width Histogram](https://github.com/CesaireTchoudjuen/programming/blob/main/hist_petal_width.png)
+
 First, let's observe the hist_petal_width.png histogram. Similarly to the petal lenght histogram, we can disctinctly observe a first block, with high frequency between 0 and 0.5cm. The second block appears more coherent, with most of the petal width measured between 1.25 and 2.5cm. The second block have more even distribution of the frequency of the petal width, while the first block appears to  
+
+![Overlapped Petal Width Histogram](https://github.com/CesaireTchoudjuen/programming/blob/main/hist_petal_width_overlap.png)
 
 The second histogram is similar to the previous one, but it presents each flower species data in a different color. With this insight, we can notice that once again that the setosa petal width measurment follow a trend very different from versicolor and virginica flowers. 
 Based on the petal length and width variables, it seems like the Iris setosa flowers have petal caracteristics deferienciating them from the 2 other flower species. It can be see by observing the blue block on this histogram vs the other red and green block. 
@@ -84,13 +88,22 @@ Based on the petal length and width variables, it seems like the Iris setosa flo
 
 Here, two histograms are observed: hist_sepal_length.png and histogram hist_sepal_length_overlap.png.
 
+![Sepal Length Histogram](https://github.com/CesaireTchoudjuen/programming/blob/main/hist_sepal_length.png)
+
 Observing the first histogram, hist_sepal_length.png, the repartition of the data accross the 3 species seems to be homogeneous, with most of the data points between 4.75cm and 6.75cm. 
+
+![Overlapped Sepal Length Histogram](https://github.com/CesaireTchoudjuen/programming/blob/main/hist_sepal_length_overlap.png)
+
 If switching to the detailed version of this histogram, hist_length_overlap.png, we can observe the Iris setosa (blue) overlapping on Iris versicolor (red), and the Iris versicolor overlapping the Iris virgnica (green). 
 The sepal length data points appears as uniformly distributed. 
 
 ### Sepal Width Histogram
 
 Here, two histograms are observed: hist_sepal_width.png and histogram hist_sepal_width_overlap.png.
+
+![Sepal Width Histogram](https://github.com/CesaireTchoudjuen/programming/blob/main/hist_sepal_width.png)
+
+![Overlapped Sepal Width Histogram](https://github.com/CesaireTchoudjuen/programming/blob/main/hist_sepal_width_overlap.png)
 
 Observing both histograms, it appears that the data of all flower species is uniformly distributed. 
 The majority of the datapoints are distributed between 2.5cm and 4cm width. Looking at the overlaping histogram, the Iris virginica data points (green) are almost entirely covered, meaning it is matching the value of both Iris setosa and Iris virginica flowers. 
@@ -106,6 +119,9 @@ In a nutshell, based on the above analysis of the histograms, several observatio
 
 After observing and commenting on the histograms of each of the 4 collected variables, we'll know observe the scatter plots for petal and sepal variables.
 Scatter plot are a good way to visualize 2 variables that pair well together and that way, have a visual representation of their relationship.
+
+![Petal Scatter Plot](https://github.com/CesaireTchoudjuen/programming/blob/main/Petal_Scatter_Plot.png)
+
 First comment when observing the scatter plots, is the linear repartition of the data points between petal length and petal width. Here the petal scatter plot display 2 distincs clusters, the first one, in blue in the file petal_scatter_plot.png, represents the setosa flowers. Once again, this flower type features are easily set apart from the two other iris species. The relationship between petal width and length is also strong. 
 In the second cluster, virginica and versicolor flowers are distributed in a linear fashion as well. Within this cluster there is a clear disctinction between the 2 species. 
 Based on this scatter plot, the petal feature can be used a differentiator to tell the 3 flower species apart.
@@ -113,6 +129,9 @@ Based on this scatter plot, the petal feature can be used a differentiator to te
 ### Sepal Scatter Plot
 
 The second scatter plot, speal_scatter_plot.png, doesn't present a linear repartition of the data points the way the petal variable does.
+
+![Sepal Scatter Plot](https://github.com/CesaireTchoudjuen/programming/blob/main/sepal_scatter_plot.png)
+
 Two clusters can be spotted. The first one, containing the greatest value for the sepal width variable, is representing the iris setosa flower. The second cluster contains the two other flower types. In this cluster the data points are overlapped and it is impossible to leverage this data to differentiate versicolor flowers from the virginica flowers. 
 
 ## SECTION 3 - Comments and Summary 
