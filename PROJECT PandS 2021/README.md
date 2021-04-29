@@ -155,4 +155,5 @@ I am aware some of these statistical methods will be covered during the second t
 * https://matplotlib.org/
 * https://seaborn.pydata.org/
 * https://numpy.org/ 
+* https://guides.github.com/features/mastering-markdown/
 

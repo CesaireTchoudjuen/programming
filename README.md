@@ -1,8 +1,8 @@
-#PROGRAMMING AND SCRIPTING
+# PROGRAMMING AND SCRIPTING
 
 ### by Cesaire Tchoudjuen - 2021H1
 
-## This is the repository for the programming and scripting course from Galway Mayo IT with Andrew Beatty
+### This is the repository for the programming and scripting course from Galway Mayo IT with Andrew Beatty
 
 In this repository, code will be uploaded to demonstrate:
 * Work on weekly labs
